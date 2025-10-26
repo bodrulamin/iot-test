@@ -1,7 +1,7 @@
 {
     "version":            "1.2",
     "project_name":       "iot-test",
-    "project_version":    "1",
+    "project_version":    "1449f4b-dirty",
     "project_path":       "/home/bodrul/iot-test",
     "idf_path":           "/home/bodrul/esp/v5.5.1/esp-idf",
     "build_dir":          "/home/bodrul/iot-test/build",
@@ -625,7 +625,7 @@
             "managed_reqs": [],
             "managed_priv_reqs": [ "espressif__led_strip" ],
             "file": "/home/bodrul/iot-test/build/esp-idf/main/libmain.a",
-            "sources": [ "/home/bodrul/iot-test/main/blink_examplemain.c", "/home/bodrul/iot-test/main/wifi_manager.c" ],
+            "sources": [ "/home/bodrul/iot-test/main/main.c", "/home/bodrul/iot-test/main/wifi_manager.c" ],
             "include_dirs": [ "." ]
         },
         "mbedtls": {
