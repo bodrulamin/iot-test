@@ -1,0 +1,74 @@
+Command: ninja flash
+[1/5] cd /home/bodrul/iot-test/build/esp-idf/esptool_py && /home/bodrul/.espressif/python_env/idf5.5_py3.13_env/bin/python /home/bodrul/esp/v5.5.1/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 partition --type app /home/bodrul/iot-test/build/partition_table/partition-table.bin /home/bodrul/iot-test/build/iot-test.bin
+iot-test.bin binary size 0xc88a0 bytes. Smallest app partition is 0x100000 bytes. 0x37760 bytes (22%) free.
+[2/5] Performing build step for 'bootloader'
+[1/1] cd /home/bodrul/iot-test/build/bootloader/esp-idf/esptool_py && /home/bodrul/.espressif/python_env/idf5.5_py3.13_env/bin/python /home/bodrul/esp/v5.5.1/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x1000 /home/bodrul/iot-test/build/bootloader/bootloader.bin
+Bootloader binary size 0x6680 bytes. 0x980 bytes (8%) free.
+[3/5] No install step for 'bootloader'
+[4/5] Completed 'bootloader'
+[4/5] cd /home/bodrul/esp/v5.5.1/esp-idf/components/esptool_py && /usr/bin/cmake -D IDF_PATH=/home/bodrul/esp/v5.5.1/esp-idf -D "SERIAL_TOOL=/home/bodrul/.espressif/python_env/idf5.5_py3.13_env/bin/python;;/home/bodrul/esp/v5.5.1/esp-idf/components/esptool_py/esptool/esptool.py;--chip;esp32" -D "SERIAL_TOOL_ARGS=--before=default_reset;--after=hard_reset;write_flash;@flash_args" -D WORKING_DIRECTORY=/home/bodrul/iot-test/build -P /home/bodrul/esp/v5.5.1/esp-idf/components/esptool_py/run_serial_tool.cmake
+esptool.py --chip esp32 -p /dev/ttyUSB0 -b 460800 --before=default_reset --after=hard_reset write_flash --flash_mode dio --flash_freq 40m --flash_size 4MB 0x1000 bootloader/bootloader.bin 0x10000 iot-test.bin 0x8000 partition_table/partition-table.bin
+esptool.py v4.10.0
+Serial port /dev/ttyUSB0
+Connecting....
+Chip is ESP32-D0WD-V3 (revision v3.1)
+Features: WiFi, BT, Dual Core, 240MHz, VRef calibration in efuse, Coding Scheme None
+Crystal is 40MHz
+MAC: 14:33:5c:52:7a:90
+Uploading stub...
+Running stub...
+Stub running...
+Changing baud rate to 460800
+Changed.
+Configuring flash size...
+Flash will be erased from 0x00001000 to 0x00007fff...
+Flash will be erased from 0x00010000 to 0x000d8fff...
+Flash will be erased from 0x00008000 to 0x00008fff...
+SHA digest in image updated
+Compressed 26240 bytes to 16494...
+Writing at 0x00001000... (50 %)
+Writing at 0x000075ee... (100 %)
+Wrote 26240 bytes (16494 compressed) at 0x00001000 in 0.5 seconds (effective 399.2 kbit/s)...
+Hash of data verified.
+Compressed 821408 bytes to 512960...
+Writing at 0x00010000... (3 %)
+Writing at 0x0001c489... (6 %)
+Writing at 0x000255cb... (9 %)
+Writing at 0x00030cf4... (12 %)
+Writing at 0x00036599... (15 %)
+Writing at 0x0003c44e... (18 %)
+Writing at 0x00042151... (21 %)
+Writing at 0x000480b8... (25 %)
+Writing at 0x0004dc53... (28 %)
+Writing at 0x00053e09... (31 %)
+Writing at 0x000593d9... (34 %)
+Writing at 0x0005ede7... (37 %)
+Writing at 0x0006494e... (40 %)
+Writing at 0x0006a1d2... (43 %)
+Writing at 0x0006f7fa... (46 %)
+Writing at 0x00075296... (50 %)
+Writing at 0x0007b28d... (53 %)
+Writing at 0x00080a65... (56 %)
+Writing at 0x0008668a... (59 %)
+Writing at 0x0008c3ef... (62 %)
+Writing at 0x00091c4f... (65 %)
+Writing at 0x000977df... (68 %)
+Writing at 0x0009d5c4... (71 %)
+Writing at 0x000a35e7... (75 %)
+Writing at 0x000a8ff2... (78 %)
+Writing at 0x000b2918... (81 %)
+Writing at 0x000b9a47... (84 %)
+Writing at 0x000bf6e7... (87 %)
+Writing at 0x000c59b7... (90 %)
+Writing at 0x000cb471... (93 %)
+Writing at 0x000d135a... (96 %)
+Writing at 0x000d6724... (100 %)
+Wrote 821408 bytes (512960 compressed) at 0x00010000 in 11.7 seconds (effective 559.6 kbit/s)...
+Hash of data verified.
+Compressed 3072 bytes to 103...
+Writing at 0x00008000... (100 %)
+Wrote 3072 bytes (103 compressed) at 0x00008000 in 0.0 seconds (effective 1521.9 kbit/s)...
+Hash of data verified.
+
+Leaving...
+Hard resetting via RTS pin...
