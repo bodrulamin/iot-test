@@ -1,0 +1,74 @@
+# ESP-IDF build output
+build/
+sdkconfig.old
+*.bin
+*.elf
+*.map
+
+# ESP-IDF dependencies
+dependencies.lock
+managed_components/
+
+# Python bytecode
+*.pyc
+__pycache__/
+*.py[cod]
+
+# VS Code
+.vscode/
+*.code-workspace
+
+# IDE and editor files
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# CMake
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+Makefile
+
+# Eclipse
+.cproject
+.project
+.settings/
+
+# Logs
+*.log
+
+# Flash download tool
+flash_download_tool/
+
+# Unit test build
+components/**/test_apps/build/
+components/**/test_apps/sdkconfig
+
+# Documentation build
+docs/_build/
+
+# Certificates and keys (if any)
+*.pem
+*.key
+*.crt
+*.cer
+
+# Environment variables
+.env
+.env.local
+
+# Temporary files
+*.tmp
+*.bak
+*.orig
+
+# Core dumps
+core
+
+# GDB
+.gdbinit
+
+# IDF specific
+idf_component.yml.lock
