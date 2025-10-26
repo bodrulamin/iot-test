@@ -4,8 +4,22 @@
 #include "esp_log.h"
 #include "nvs_flash.h"
 #include "wifi_manager.h"
+#include "device_mqtt.h"
 
 static const char *TAG = "Main";
+
+// Task to periodically publish device information
+static void mqtt_publish_task(void *pvParameters)
+{
+    while (1) {
+        // Wait for MQTT connection
+        if (mqtt_is_connected()) {
+            // Publish device information every 60 seconds
+            mqtt_publish_device_info();
+        }
+        vTaskDelay(pdMS_TO_TICKS(60000)); // 60 seconds
+    }
+}
 
 void app_main(void)
 {
@@ -33,6 +47,20 @@ void app_main(void)
             ESP_LOGI(TAG, "Successfully connected to WiFi!");
             // Start web server for configuration even when connected
             wifi_manager_start_webserver();
+
+            // Initialize and start MQTT client
+            ESP_LOGI(TAG, "Initializing MQTT client...");
+            if (mqtt_client_init() == ESP_OK) {
+                if (mqtt_client_start() == ESP_OK) {
+                    ESP_LOGI(TAG, "MQTT client started successfully");
+                    // Create task to periodically publish device info
+                    xTaskCreate(mqtt_publish_task, "mqtt_publish_task", 4096, NULL, 5, NULL);
+                } else {
+                    ESP_LOGE(TAG, "Failed to start MQTT client");
+                }
+            } else {
+                ESP_LOGE(TAG, "Failed to initialize MQTT client");
+            }
         } else {
             ESP_LOGI(TAG, "Failed to connect, starting AP mode...");
             wifi_manager_start_ap();

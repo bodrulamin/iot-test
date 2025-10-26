@@ -45,6 +45,7 @@
 /home/bodrul/iot-test/build/esp-idf/esp_netif/libesp_netif.a
 /home/bodrul/iot-test/build/esp-idf/wpa_supplicant/libwpa_supplicant.a
 /home/bodrul/iot-test/build/esp-idf/esp_coex/libesp_coex.a
+/home/bodrul/iot-test/build/esp-idf/esp-tls/libesp-tls.a
 /home/bodrul/iot-test/build/esp-idf/esp_security/libesp_security.a
 /home/bodrul/iot-test/build/esp-idf/pthread/libpthread.a
 /home/bodrul/iot-test/build/esp-idf/esp_driver_gpio/libesp_driver_gpio.a
@@ -83,10 +84,15 @@
 /home/bodrul/iot-test/build/esp-idf/esp_wifi/libesp_wifi.a
 /home/bodrul/iot-test/build/esp-idf/http_parser/libhttp_parser.a
 /home/bodrul/iot-test/build/esp-idf/esp_http_server/libesp_http_server.a
+/home/bodrul/iot-test/build/esp-idf/esp-tls/libesp-tls.a
+/home/bodrul/iot-test/build/esp-idf/tcp_transport/libtcp_transport.a
+/home/bodrul/iot-test/build/esp-idf/mqtt/libmqtt.a
+/home/bodrul/iot-test/build/esp-idf/tcp_transport/libtcp_transport.a
 /home/bodrul/iot-test/build/esp-idf/esp_driver_rmt/libesp_driver_rmt.a
 /home/bodrul/iot-test/build/esp-idf/esp_driver_spi/libesp_driver_spi.a
 /home/bodrul/iot-test/build/esp-idf/espressif__led_strip/libespressif__led_strip.a
 /home/bodrul/iot-test/build/esp-idf/esp_driver_rmt/libesp_driver_rmt.a
 /home/bodrul/iot-test/build/esp-idf/esp_driver_spi/libesp_driver_spi.a
 /home/bodrul/iot-test/build/esp-idf/main/libmain.a
+/home/bodrul/iot-test/build/esp-idf/mqtt/libmqtt.a
 /home/bodrul/iot-test/build/esp-idf/espressif__led_strip/libespressif__led_strip.a

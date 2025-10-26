@@ -1,7 +1,7 @@
 {
     "version":            "1.2",
     "project_name":       "iot-test",
-    "project_version":    "1449f4b-dirty",
+    "project_version":    "44db274-dirty",
     "project_path":       "/home/bodrul/iot-test",
     "idf_path":           "/home/bodrul/esp/v5.5.1/esp-idf",
     "build_dir":          "/home/bodrul/iot-test/build",
@@ -21,12 +21,12 @@
     "monitor_toolprefix": "xtensa-esp32-elf-",
     "c_compiler":         "/home/bodrul/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32-elf-gcc",
     "config_environment" : {
-        "COMPONENT_KCONFIGS" : "/home/bodrul/esp/v5.5.1/esp-idf/components/efuse/Kconfig;/home/bodrul/esp/v5.5.1/esp-idf/components/esp_coex/Kconfig;/home/bodrul/esp/v5.5.1/esp-idf/components/esp_common/Kconfig;/home/bodrul/esp/v5.5.1/esp-idf/components/esp_driver_bitscrambler/Kconfig;/home/bodrul/esp/v5.5.1/esp-idf/components/esp_driver_gpio/Kconfig;/home/bodrul/esp/v5.5.1/esp-idf/components/esp_driver_rmt/Kconfig;/home/bodrul/esp/v5.5.1/esp-idf/components/esp_driver_spi/Kconfig;/home/bodrul/esp/v5.5.1/esp-idf/components/esp_driver_uart/Kconfig;/home/bodrul/esp/v5.5.1/esp-idf/components/esp_driver_usb_serial_jtag/Kconfig;/home/bodrul/esp/v5.5.1/esp-idf/components/esp_event/Kconfig;/home/bodrul/esp/v5.5.1/esp-idf/components/esp_http_server/Kconfig;/home/bodrul/esp/v5.5.1/esp-idf/components/esp_hw_support/Kconfig;/home/bodrul/esp/v5.5.1/esp-idf/components/esp_mm/Kconfig;/home/bodrul/esp/v5.5.1/esp-idf/components/esp_netif/Kconfig;/home/bodrul/esp/v5.5.1/esp-idf/components/esp_partition/Kconfig;/home/bodrul/esp/v5.5.1/esp-idf/components/esp_phy/Kconfig;/home/bodrul/esp/v5.5.1/esp-idf/components/esp_pm/Kconfig;/home/bodrul/esp/v5.5.1/esp-idf/components/esp_ringbuf/Kconfig;/home/bodrul/esp/v5.5.1/esp-idf/components/esp_rom/Kconfig;/home/bodrul/esp/v5.5.1/esp-idf/components/esp_security/Kconfig;/home/bodrul/esp/v5.5.1/esp-idf/components/esp_system/Kconfig;/home/bodrul/esp/v5.5.1/esp-idf/components/esp_timer/Kconfig;/home/bodrul/esp/v5.5.1/esp-idf/components/esp_wifi/Kconfig;/home/bodrul/esp/v5.5.1/esp-idf/components/freertos/Kconfig;/home/bodrul/esp/v5.5.1/esp-idf/components/hal/Kconfig;/home/bodrul/esp/v5.5.1/esp-idf/components/heap/Kconfig;/home/bodrul/esp/v5.5.1/esp-idf/components/log/Kconfig;/home/bodrul/esp/v5.5.1/esp-idf/components/lwip/Kconfig;/home/bodrul/esp/v5.5.1/esp-idf/components/mbedtls/Kconfig;/home/bodrul/esp/v5.5.1/esp-idf/components/newlib/Kconfig;/home/bodrul/esp/v5.5.1/esp-idf/components/nvs_flash/Kconfig;/home/bodrul/esp/v5.5.1/esp-idf/components/pthread/Kconfig;/home/bodrul/esp/v5.5.1/esp-idf/components/soc/Kconfig;/home/bodrul/esp/v5.5.1/esp-idf/components/spi_flash/Kconfig;/home/bodrul/esp/v5.5.1/esp-idf/components/vfs/Kconfig",
+        "COMPONENT_KCONFIGS" : "/home/bodrul/esp/v5.5.1/esp-idf/components/efuse/Kconfig;/home/bodrul/esp/v5.5.1/esp-idf/components/esp-tls/Kconfig;/home/bodrul/esp/v5.5.1/esp-idf/components/esp_coex/Kconfig;/home/bodrul/esp/v5.5.1/esp-idf/components/esp_common/Kconfig;/home/bodrul/esp/v5.5.1/esp-idf/components/esp_driver_bitscrambler/Kconfig;/home/bodrul/esp/v5.5.1/esp-idf/components/esp_driver_gpio/Kconfig;/home/bodrul/esp/v5.5.1/esp-idf/components/esp_driver_rmt/Kconfig;/home/bodrul/esp/v5.5.1/esp-idf/components/esp_driver_spi/Kconfig;/home/bodrul/esp/v5.5.1/esp-idf/components/esp_driver_uart/Kconfig;/home/bodrul/esp/v5.5.1/esp-idf/components/esp_driver_usb_serial_jtag/Kconfig;/home/bodrul/esp/v5.5.1/esp-idf/components/esp_event/Kconfig;/home/bodrul/esp/v5.5.1/esp-idf/components/esp_http_server/Kconfig;/home/bodrul/esp/v5.5.1/esp-idf/components/esp_hw_support/Kconfig;/home/bodrul/esp/v5.5.1/esp-idf/components/esp_mm/Kconfig;/home/bodrul/esp/v5.5.1/esp-idf/components/esp_netif/Kconfig;/home/bodrul/esp/v5.5.1/esp-idf/components/esp_partition/Kconfig;/home/bodrul/esp/v5.5.1/esp-idf/components/esp_phy/Kconfig;/home/bodrul/esp/v5.5.1/esp-idf/components/esp_pm/Kconfig;/home/bodrul/esp/v5.5.1/esp-idf/components/esp_ringbuf/Kconfig;/home/bodrul/esp/v5.5.1/esp-idf/components/esp_rom/Kconfig;/home/bodrul/esp/v5.5.1/esp-idf/components/esp_security/Kconfig;/home/bodrul/esp/v5.5.1/esp-idf/components/esp_system/Kconfig;/home/bodrul/esp/v5.5.1/esp-idf/components/esp_timer/Kconfig;/home/bodrul/esp/v5.5.1/esp-idf/components/esp_wifi/Kconfig;/home/bodrul/esp/v5.5.1/esp-idf/components/freertos/Kconfig;/home/bodrul/esp/v5.5.1/esp-idf/components/hal/Kconfig;/home/bodrul/esp/v5.5.1/esp-idf/components/heap/Kconfig;/home/bodrul/esp/v5.5.1/esp-idf/components/log/Kconfig;/home/bodrul/esp/v5.5.1/esp-idf/components/lwip/Kconfig;/home/bodrul/esp/v5.5.1/esp-idf/components/mbedtls/Kconfig;/home/bodrul/esp/v5.5.1/esp-idf/components/mqtt/esp-mqtt/Kconfig;/home/bodrul/esp/v5.5.1/esp-idf/components/newlib/Kconfig;/home/bodrul/esp/v5.5.1/esp-idf/components/nvs_flash/Kconfig;/home/bodrul/esp/v5.5.1/esp-idf/components/pthread/Kconfig;/home/bodrul/esp/v5.5.1/esp-idf/components/soc/Kconfig;/home/bodrul/esp/v5.5.1/esp-idf/components/spi_flash/Kconfig;/home/bodrul/esp/v5.5.1/esp-idf/components/tcp_transport/Kconfig;/home/bodrul/esp/v5.5.1/esp-idf/components/vfs/Kconfig",
         "COMPONENT_KCONFIGS_PROJBUILD" : "/home/bodrul/esp/v5.5.1/esp-idf/components/bootloader/Kconfig.projbuild;/home/bodrul/esp/v5.5.1/esp-idf/components/esp_app_format/Kconfig.projbuild;/home/bodrul/esp/v5.5.1/esp-idf/components/esp_rom/Kconfig.projbuild;/home/bodrul/esp/v5.5.1/esp-idf/components/esptool_py/Kconfig.projbuild;/home/bodrul/esp/v5.5.1/esp-idf/components/partition_table/Kconfig.projbuild;/home/bodrul/iot-test/main/Kconfig.projbuild"
     },
     "common_component_reqs": [ "cxx", "newlib", "freertos", "esp_hw_support", "heap", "log", "soc", "hal", "esp_rom", "esp_common", "esp_system", "xtensa" ],
-    "build_components" : [ "app_update", "bootloader", "bootloader_support", "cxx", "efuse", "esp_app_format", "esp_bootloader_format", "esp_coex", "esp_common", "esp_driver_bitscrambler", "esp_driver_gpio", "esp_driver_rmt", "esp_driver_spi", "esp_driver_uart", "esp_driver_usb_serial_jtag", "esp_event", "esp_http_server", "esp_hw_support", "esp_mm", "esp_netif", "esp_netif_stack", "esp_partition", "esp_phy", "esp_pm", "esp_ringbuf", "esp_rom", "esp_security", "esp_system", "esp_timer", "esp_vfs_console", "esp_wifi", "espressif__led_strip", "esptool_py", "freertos", "hal", "heap", "http_parser", "log", "lwip", "main", "mbedtls", "newlib", "nvs_flash", "partition_table", "pthread", "soc", "spi_flash", "vfs", "wpa_supplicant", "xtensa", "" ],
-    "build_component_paths" : [ "/home/bodrul/esp/v5.5.1/esp-idf/components/app_update", "/home/bodrul/esp/v5.5.1/esp-idf/components/bootloader", "/home/bodrul/esp/v5.5.1/esp-idf/components/bootloader_support", "/home/bodrul/esp/v5.5.1/esp-idf/components/cxx", "/home/bodrul/esp/v5.5.1/esp-idf/components/efuse", "/home/bodrul/esp/v5.5.1/esp-idf/components/esp_app_format", "/home/bodrul/esp/v5.5.1/esp-idf/components/esp_bootloader_format", "/home/bodrul/esp/v5.5.1/esp-idf/components/esp_coex", "/home/bodrul/esp/v5.5.1/esp-idf/components/esp_common", "/home/bodrul/esp/v5.5.1/esp-idf/components/esp_driver_bitscrambler", "/home/bodrul/esp/v5.5.1/esp-idf/components/esp_driver_gpio", "/home/bodrul/esp/v5.5.1/esp-idf/components/esp_driver_rmt", "/home/bodrul/esp/v5.5.1/esp-idf/components/esp_driver_spi", "/home/bodrul/esp/v5.5.1/esp-idf/components/esp_driver_uart", "/home/bodrul/esp/v5.5.1/esp-idf/components/esp_driver_usb_serial_jtag", "/home/bodrul/esp/v5.5.1/esp-idf/components/esp_event", "/home/bodrul/esp/v5.5.1/esp-idf/components/esp_http_server", "/home/bodrul/esp/v5.5.1/esp-idf/components/esp_hw_support", "/home/bodrul/esp/v5.5.1/esp-idf/components/esp_mm", "/home/bodrul/esp/v5.5.1/esp-idf/components/esp_netif", "/home/bodrul/esp/v5.5.1/esp-idf/components/esp_netif_stack", "/home/bodrul/esp/v5.5.1/esp-idf/components/esp_partition", "/home/bodrul/esp/v5.5.1/esp-idf/components/esp_phy", "/home/bodrul/esp/v5.5.1/esp-idf/components/esp_pm", "/home/bodrul/esp/v5.5.1/esp-idf/components/esp_ringbuf", "/home/bodrul/esp/v5.5.1/esp-idf/components/esp_rom", "/home/bodrul/esp/v5.5.1/esp-idf/components/esp_security", "/home/bodrul/esp/v5.5.1/esp-idf/components/esp_system", "/home/bodrul/esp/v5.5.1/esp-idf/components/esp_timer", "/home/bodrul/esp/v5.5.1/esp-idf/components/esp_vfs_console", "/home/bodrul/esp/v5.5.1/esp-idf/components/esp_wifi", "/home/bodrul/iot-test/managed_components/espressif__led_strip", "/home/bodrul/esp/v5.5.1/esp-idf/components/esptool_py", "/home/bodrul/esp/v5.5.1/esp-idf/components/freertos", "/home/bodrul/esp/v5.5.1/esp-idf/components/hal", "/home/bodrul/esp/v5.5.1/esp-idf/components/heap", "/home/bodrul/esp/v5.5.1/esp-idf/components/http_parser", "/home/bodrul/esp/v5.5.1/esp-idf/components/log", "/home/bodrul/esp/v5.5.1/esp-idf/components/lwip", "/home/bodrul/iot-test/main", "/home/bodrul/esp/v5.5.1/esp-idf/components/mbedtls", "/home/bodrul/esp/v5.5.1/esp-idf/components/newlib", "/home/bodrul/esp/v5.5.1/esp-idf/components/nvs_flash", "/home/bodrul/esp/v5.5.1/esp-idf/components/partition_table", "/home/bodrul/esp/v5.5.1/esp-idf/components/pthread", "/home/bodrul/esp/v5.5.1/esp-idf/components/soc", "/home/bodrul/esp/v5.5.1/esp-idf/components/spi_flash", "/home/bodrul/esp/v5.5.1/esp-idf/components/vfs", "/home/bodrul/esp/v5.5.1/esp-idf/components/wpa_supplicant", "/home/bodrul/esp/v5.5.1/esp-idf/components/xtensa", "" ],
+    "build_components" : [ "app_update", "bootloader", "bootloader_support", "cxx", "efuse", "esp-tls", "esp_app_format", "esp_bootloader_format", "esp_coex", "esp_common", "esp_driver_bitscrambler", "esp_driver_gpio", "esp_driver_rmt", "esp_driver_spi", "esp_driver_uart", "esp_driver_usb_serial_jtag", "esp_event", "esp_http_server", "esp_hw_support", "esp_mm", "esp_netif", "esp_netif_stack", "esp_partition", "esp_phy", "esp_pm", "esp_ringbuf", "esp_rom", "esp_security", "esp_system", "esp_timer", "esp_vfs_console", "esp_wifi", "espressif__led_strip", "esptool_py", "freertos", "hal", "heap", "http_parser", "log", "lwip", "main", "mbedtls", "mqtt", "newlib", "nvs_flash", "partition_table", "pthread", "soc", "spi_flash", "tcp_transport", "vfs", "wpa_supplicant", "xtensa", "" ],
+    "build_component_paths" : [ "/home/bodrul/esp/v5.5.1/esp-idf/components/app_update", "/home/bodrul/esp/v5.5.1/esp-idf/components/bootloader", "/home/bodrul/esp/v5.5.1/esp-idf/components/bootloader_support", "/home/bodrul/esp/v5.5.1/esp-idf/components/cxx", "/home/bodrul/esp/v5.5.1/esp-idf/components/efuse", "/home/bodrul/esp/v5.5.1/esp-idf/components/esp-tls", "/home/bodrul/esp/v5.5.1/esp-idf/components/esp_app_format", "/home/bodrul/esp/v5.5.1/esp-idf/components/esp_bootloader_format", "/home/bodrul/esp/v5.5.1/esp-idf/components/esp_coex", "/home/bodrul/esp/v5.5.1/esp-idf/components/esp_common", "/home/bodrul/esp/v5.5.1/esp-idf/components/esp_driver_bitscrambler", "/home/bodrul/esp/v5.5.1/esp-idf/components/esp_driver_gpio", "/home/bodrul/esp/v5.5.1/esp-idf/components/esp_driver_rmt", "/home/bodrul/esp/v5.5.1/esp-idf/components/esp_driver_spi", "/home/bodrul/esp/v5.5.1/esp-idf/components/esp_driver_uart", "/home/bodrul/esp/v5.5.1/esp-idf/components/esp_driver_usb_serial_jtag", "/home/bodrul/esp/v5.5.1/esp-idf/components/esp_event", "/home/bodrul/esp/v5.5.1/esp-idf/components/esp_http_server", "/home/bodrul/esp/v5.5.1/esp-idf/components/esp_hw_support", "/home/bodrul/esp/v5.5.1/esp-idf/components/esp_mm", "/home/bodrul/esp/v5.5.1/esp-idf/components/esp_netif", "/home/bodrul/esp/v5.5.1/esp-idf/components/esp_netif_stack", "/home/bodrul/esp/v5.5.1/esp-idf/components/esp_partition", "/home/bodrul/esp/v5.5.1/esp-idf/components/esp_phy", "/home/bodrul/esp/v5.5.1/esp-idf/components/esp_pm", "/home/bodrul/esp/v5.5.1/esp-idf/components/esp_ringbuf", "/home/bodrul/esp/v5.5.1/esp-idf/components/esp_rom", "/home/bodrul/esp/v5.5.1/esp-idf/components/esp_security", "/home/bodrul/esp/v5.5.1/esp-idf/components/esp_system", "/home/bodrul/esp/v5.5.1/esp-idf/components/esp_timer", "/home/bodrul/esp/v5.5.1/esp-idf/components/esp_vfs_console", "/home/bodrul/esp/v5.5.1/esp-idf/components/esp_wifi", "/home/bodrul/iot-test/managed_components/espressif__led_strip", "/home/bodrul/esp/v5.5.1/esp-idf/components/esptool_py", "/home/bodrul/esp/v5.5.1/esp-idf/components/freertos", "/home/bodrul/esp/v5.5.1/esp-idf/components/hal", "/home/bodrul/esp/v5.5.1/esp-idf/components/heap", "/home/bodrul/esp/v5.5.1/esp-idf/components/http_parser", "/home/bodrul/esp/v5.5.1/esp-idf/components/log", "/home/bodrul/esp/v5.5.1/esp-idf/components/lwip", "/home/bodrul/iot-test/main", "/home/bodrul/esp/v5.5.1/esp-idf/components/mbedtls", "/home/bodrul/esp/v5.5.1/esp-idf/components/mqtt", "/home/bodrul/esp/v5.5.1/esp-idf/components/newlib", "/home/bodrul/esp/v5.5.1/esp-idf/components/nvs_flash", "/home/bodrul/esp/v5.5.1/esp-idf/components/partition_table", "/home/bodrul/esp/v5.5.1/esp-idf/components/pthread", "/home/bodrul/esp/v5.5.1/esp-idf/components/soc", "/home/bodrul/esp/v5.5.1/esp-idf/components/spi_flash", "/home/bodrul/esp/v5.5.1/esp-idf/components/tcp_transport", "/home/bodrul/esp/v5.5.1/esp-idf/components/vfs", "/home/bodrul/esp/v5.5.1/esp-idf/components/wpa_supplicant", "/home/bodrul/esp/v5.5.1/esp-idf/components/xtensa", "" ],
     "build_component_info" : {
         "app_update": {
             "alias": "idf::app_update",
@@ -102,6 +102,21 @@
             "file": "/home/bodrul/iot-test/build/esp-idf/efuse/libefuse.a",
             "sources": [ "/home/bodrul/esp/v5.5.1/esp-idf/components/efuse/esp32/esp_efuse_table.c", "/home/bodrul/esp/v5.5.1/esp-idf/components/efuse/esp32/esp_efuse_fields.c", "/home/bodrul/esp/v5.5.1/esp-idf/components/efuse/esp32/esp_efuse_utility.c", "/home/bodrul/esp/v5.5.1/esp-idf/components/efuse/src/esp_efuse_api.c", "/home/bodrul/esp/v5.5.1/esp-idf/components/efuse/src/esp_efuse_fields.c", "/home/bodrul/esp/v5.5.1/esp-idf/components/efuse/src/esp_efuse_utility.c", "/home/bodrul/esp/v5.5.1/esp-idf/components/efuse/src/efuse_controller/keys/without_key_purposes/three_key_blocks/esp_efuse_api_key.c", "/home/bodrul/esp/v5.5.1/esp-idf/components/efuse/src/esp_efuse_startup.c" ],
             "include_dirs": [ "include", "esp32/include" ]
+        },
+        "esp-tls": {
+            "alias": "idf::esp-tls",
+            "target": "___idf_esp-tls",
+            "prefix": "idf",
+            "dir": "/home/bodrul/esp/v5.5.1/esp-idf/components/esp-tls",
+            "type": "LIBRARY",
+            "lib": "__idf_esp-tls",
+            "reqs": [ "mbedtls" ],
+            "priv_reqs": [ "http_parser", "esp_timer", "lwip" ],
+            "managed_reqs": [],
+            "managed_priv_reqs": [],
+            "file": "/home/bodrul/iot-test/build/esp-idf/esp-tls/libesp-tls.a",
+            "sources": [ "/home/bodrul/esp/v5.5.1/esp-idf/components/esp-tls/esp_tls.c", "/home/bodrul/esp/v5.5.1/esp-idf/components/esp-tls/esp-tls-crypto/esp_tls_crypto.c", "/home/bodrul/esp/v5.5.1/esp-idf/components/esp-tls/esp_tls_error_capture.c", "/home/bodrul/esp/v5.5.1/esp-idf/components/esp-tls/esp_tls_platform_port.c", "/home/bodrul/esp/v5.5.1/esp-idf/components/esp-tls/esp_tls_mbedtls.c" ],
+            "include_dirs": [ "/home/bodrul/esp/v5.5.1/esp-idf/components/esp-tls", "esp-tls-crypto" ]
         },
         "esp_app_format": {
             "alias": "idf::esp_app_format",
@@ -621,11 +636,11 @@
             "type": "LIBRARY",
             "lib": "__idf_main",
             "reqs": [],
-            "priv_reqs": [ "esp_wifi", "esp_netif", "esp_http_server", "nvs_flash", "lwip", "espressif__led_strip" ],
+            "priv_reqs": [ "esp_wifi", "esp_netif", "esp_http_server", "nvs_flash", "lwip", "mqtt", "espressif__led_strip" ],
             "managed_reqs": [],
             "managed_priv_reqs": [ "espressif__led_strip" ],
             "file": "/home/bodrul/iot-test/build/esp-idf/main/libmain.a",
-            "sources": [ "/home/bodrul/iot-test/main/main.c", "/home/bodrul/iot-test/main/wifi_manager.c" ],
+            "sources": [ "/home/bodrul/iot-test/main/device_mqtt.c", "/home/bodrul/iot-test/main/main.c", "/home/bodrul/iot-test/main/wifi_manager.c", "/home/bodrul/iot-test/main/dns_server.c" ],
             "include_dirs": [ "." ]
         },
         "mbedtls": {
@@ -642,6 +657,21 @@
             "file": "/home/bodrul/iot-test/build/esp-idf/mbedtls/libmbedtls.a",
             "sources": [ "/home/bodrul/esp/v5.5.1/esp-idf/components/mbedtls/esp_crt_bundle/esp_crt_bundle.c", "/home/bodrul/iot-test/build/x509_crt_bundle.S" ],
             "include_dirs": [ "port/include", "mbedtls/include", "mbedtls/library", "esp_crt_bundle/include" ]
+        },
+        "mqtt": {
+            "alias": "idf::mqtt",
+            "target": "___idf_mqtt",
+            "prefix": "idf",
+            "dir": "/home/bodrul/esp/v5.5.1/esp-idf/components/mqtt",
+            "type": "LIBRARY",
+            "lib": "__idf_mqtt",
+            "reqs": [ "esp_event", "tcp_transport" ],
+            "priv_reqs": [ "esp_timer", "http_parser", "esp_hw_support", "heap" ],
+            "managed_reqs": [],
+            "managed_priv_reqs": [],
+            "file": "/home/bodrul/iot-test/build/esp-idf/mqtt/libmqtt.a",
+            "sources": [ "/home/bodrul/esp/v5.5.1/esp-idf/components/mqtt/esp-mqtt/mqtt_client.c", "/home/bodrul/esp/v5.5.1/esp-idf/components/mqtt/esp-mqtt/lib/mqtt_msg.c", "/home/bodrul/esp/v5.5.1/esp-idf/components/mqtt/esp-mqtt/lib/mqtt_outbox.c", "/home/bodrul/esp/v5.5.1/esp-idf/components/mqtt/esp-mqtt/lib/platform_esp32_idf.c" ],
+            "include_dirs": [ "/home/bodrul/esp/v5.5.1/esp-idf/components/mqtt/esp-mqtt/include" ]
         },
         "newlib": {
             "alias": "idf::newlib",
@@ -731,6 +761,21 @@
             "managed_priv_reqs": [],
             "file": "/home/bodrul/iot-test/build/esp-idf/spi_flash/libspi_flash.a",
             "sources": [ "/home/bodrul/esp/v5.5.1/esp-idf/components/spi_flash/flash_brownout_hook.c", "/home/bodrul/esp/v5.5.1/esp-idf/components/spi_flash/spi_flash_chip_drivers.c", "/home/bodrul/esp/v5.5.1/esp-idf/components/spi_flash/spi_flash_chip_generic.c", "/home/bodrul/esp/v5.5.1/esp-idf/components/spi_flash/spi_flash_chip_issi.c", "/home/bodrul/esp/v5.5.1/esp-idf/components/spi_flash/spi_flash_chip_mxic.c", "/home/bodrul/esp/v5.5.1/esp-idf/components/spi_flash/spi_flash_chip_gd.c", "/home/bodrul/esp/v5.5.1/esp-idf/components/spi_flash/spi_flash_chip_winbond.c", "/home/bodrul/esp/v5.5.1/esp-idf/components/spi_flash/spi_flash_chip_boya.c", "/home/bodrul/esp/v5.5.1/esp-idf/components/spi_flash/spi_flash_chip_mxic_opi.c", "/home/bodrul/esp/v5.5.1/esp-idf/components/spi_flash/spi_flash_chip_th.c", "/home/bodrul/esp/v5.5.1/esp-idf/components/spi_flash/memspi_host_driver.c", "/home/bodrul/esp/v5.5.1/esp-idf/components/spi_flash/cache_utils.c", "/home/bodrul/esp/v5.5.1/esp-idf/components/spi_flash/flash_mmap.c", "/home/bodrul/esp/v5.5.1/esp-idf/components/spi_flash/flash_ops.c", "/home/bodrul/esp/v5.5.1/esp-idf/components/spi_flash/spi_flash_wrap.c", "/home/bodrul/esp/v5.5.1/esp-idf/components/spi_flash/esp_flash_api.c", "/home/bodrul/esp/v5.5.1/esp-idf/components/spi_flash/esp_flash_spi_init.c", "/home/bodrul/esp/v5.5.1/esp-idf/components/spi_flash/spi_flash_os_func_app.c", "/home/bodrul/esp/v5.5.1/esp-idf/components/spi_flash/spi_flash_os_func_noos.c" ],
+            "include_dirs": [ "include" ]
+        },
+        "tcp_transport": {
+            "alias": "idf::tcp_transport",
+            "target": "___idf_tcp_transport",
+            "prefix": "idf",
+            "dir": "/home/bodrul/esp/v5.5.1/esp-idf/components/tcp_transport",
+            "type": "LIBRARY",
+            "lib": "__idf_tcp_transport",
+            "reqs": [ "esp-tls", "lwip", "esp_timer" ],
+            "priv_reqs": [],
+            "managed_reqs": [],
+            "managed_priv_reqs": [],
+            "file": "/home/bodrul/iot-test/build/esp-idf/tcp_transport/libtcp_transport.a",
+            "sources": [ "/home/bodrul/esp/v5.5.1/esp-idf/components/tcp_transport/transport.c", "/home/bodrul/esp/v5.5.1/esp-idf/components/tcp_transport/transport_ssl.c", "/home/bodrul/esp/v5.5.1/esp-idf/components/tcp_transport/transport_internal.c", "/home/bodrul/esp/v5.5.1/esp-idf/components/tcp_transport/transport_socks_proxy.c", "/home/bodrul/esp/v5.5.1/esp-idf/components/tcp_transport/transport_ws.c" ],
             "include_dirs": [ "include" ]
         },
         "vfs": {
@@ -910,7 +955,7 @@
             "priv_reqs": [ "http_parser", "esp_timer", "lwip" ],
             "managed_reqs": [],
             "managed_priv_reqs": [],
-            "include_dirs": [ "/home/bodrul/iot-test/build", "esp-tls-crypto" ]
+            "include_dirs": [ "/home/bodrul/esp/v5.5.1/esp-idf/components/esp-tls", "esp-tls-crypto" ]
         },
         "esp_adc": {
             "alias": "idf::esp_adc",
@@ -2083,7 +2128,7 @@
             "dir": "/home/bodrul/iot-test/main",
             "lib": "__idf_main",
             "reqs": [],
-            "priv_reqs": [ "esp_wifi", "esp_netif", "esp_http_server", "nvs_flash", "lwip", "espressif__led_strip" ],
+            "priv_reqs": [ "esp_wifi", "esp_netif", "esp_http_server", "nvs_flash", "lwip", "mqtt", "espressif__led_strip" ],
             "managed_reqs": [],
             "managed_priv_reqs": [ "espressif__led_strip" ],
             "include_dirs": [ "." ]

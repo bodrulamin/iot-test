@@ -52,7 +52,7 @@ This project implements a complete WiFi provisioning system with a captive porta
 2. **wifi_manager.c** - Main WiFi provisioning logic
 3. **dns_server.h** - DNS server interface
 4. **dns_server.c** - Captive portal DNS server
-5. **blink_example_main.c** - Main application
+5. **main.c** - Main application
 6. **CMakeLists.txt** - Build configuration
 
 ## How to Use
